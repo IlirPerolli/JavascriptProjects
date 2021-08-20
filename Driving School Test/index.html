@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="  https://02f0a56ef46d93f03c90-22ac5f107621879d5667e0d7ed595bdb.ssl.cf2.rackcdn.com/sites/17535/logo_images/50073_original.png?1536133185"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <meta
+      property="og:image"
+      content="  https://02f0a56ef46d93f03c90-22ac5f107621879d5667e0d7ed595bdb.ssl.cf2.rackcdn.com/sites/17535/logo_images/50073_original.png?1536133185"
+    />
+    <meta name="description" content="Autoshkolla" />
+    <title>Autoshkolla</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="counter">
+        Pyetja <span class="question-counter">1</span>/30
+      </div>
+      <hr />
+
+      <div class="container-question">
+        <div class="photo">
+          <img src="" class="question-photo" />
+        </div>
+        <div class="answers-container">
+          <div class="title"></div>
+          <div class="questions-body">
+            <div class="individual-question">
+              <input
+                type="checkbox"
+                id="question-1"
+                value="1"
+                class="question"
+              /><span id="label-question"> </span>
+            </div>
+            <div class="individual-question">
+              <input
+                type="checkbox"
+                id="question-2"
+                class="question"
+                value="2"
+              /><span id="label-question"> </span>
+            </div>
+            <div class="individual-question">
+              <input
+                type="checkbox"
+                id="question-3"
+                class="question"
+                value="3"
+              /><span id="label-question"> </span>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="previous">Prapa</button>
+            <button class="next">Tjetra</button>
+            <button class="complete hidden">Perfundo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="result hidden">
+      <div class="result-title"></div>
+      <div class="points"></div>
+      <br />
+      <div class="result-body"></div>
+    </div>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 class="modal-heading"></h1>
+      <p class="model-body">
+        <div class="container-question">
+          <div class="photo">
+            <img src="" class="question-photo modal-question-photo" />
+          </div>
+          <div class="answers-container">
+            <div class="title"></div>
+            <div class="questions-body">
+              <div class="individual-question">
+                <input
+                  type="checkbox"
+                  id="question-1"
+                  value="1" onclick="return false;"
+                  class="question modal-question"
+                /><span class="modal-label-question" id="label-question"> </span>
+              </div>
+              <div class="individual-question">
+                <input
+                  type="checkbox" onclick="return false;"
+                  id="question-2"
+                  class="question modal-question"
+                  value="2"
+                /><span class="modal-label-question" id="label-question"> </span>
+              </div>
+              <div class="individual-question">
+                <input
+                  type="checkbox"
+                  id="question-3" onclick="return false;"
+                  class="question modal-question"
+                  value="3"
+                /><span class="modal-label-question" id="label-question"> </span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
