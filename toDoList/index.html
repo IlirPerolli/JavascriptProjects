@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="images/todo.png" type="image/gif" sizes="16x16" />
+    <meta property="og:image" content="images/todo.png" />
+    <meta name="description" content="Lista e shenimeve" />
+    <title>Lista e shenimeve</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-container">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Shkruani detyrën"
+          autofocus
+        />
+        <div id="message"></div>
+        <div id="task-container"></div>
+        <div
+          id="completed-task-container"
+          class="hidden"
+          style="margin-top: 10px"
+        >
+          Detyrat e kompletuara
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
